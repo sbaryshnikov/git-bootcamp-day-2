@@ -1,46 +1,47 @@
-# Contributing to sample-cli
+# Contributing to My Project
 
-Спасибо, что хотите внести вклад. Несколько правил, чтобы процесс шёл гладко.
+First off, thank you for considering contributing to this project! It is people like you who make the open-source community an amazing place to learn, inspire, and create.
 
-## Как сообщить об ошибке
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before interacting with the project.
 
-1. Поищите в открытых issues — возможно, такая уже есть.
-2. Если нет — создайте новый issue. Опишите:
-   - что ожидали увидеть;
-   - что получили на самом деле;
-   - шаги воспроизведения;
-   - версию Python и ОС.
+## How Can I Contribute?
 
-## Как предложить улучшение
+### Reporting Bugs
+- **Check existing issues:** Search the issue tracker to see if the bug has already been reported.
+- **Create a new issue:** If it is a new bug, open an issue using the "Bug Report" template.
+- **Provide details:** Include clear steps to reproduce the bug, expected behavior, and screenshots if applicable.
 
-1. Сначала откройте issue с описанием идеи — лучше обсудить до написания кода.
-2. После одобрения — форкните репозиторий, создайте ветку, сделайте PR.
+### Suggesting Enhancements
+- **Check existing suggestions:** Ensure your idea hasn't been proposed yet.
+- **Open a feature request:** Explain clearly how the new feature works and why it would benefit users.
 
-## Процесс работы с кодом
+### Submitting Pull Requests (PRs)
+1. **Fork the repository** to your own GitHub account.
+2. **Clone the fork** to your local machine:
+   ```bask
+   git clone git@github.com:sbaryshnikov/git-bootcamp-day-2.git
+   ```
+3. **Create a branch** for your changes using a descriptive name:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+4. **Make your changes** and ensure all code matches our style guidelines.
+5. **Run the test suite** locally to make sure nothing is broken.
+6. **Commit your changes** with a clear commit message:
+   ```bash
+   git commit -m "Add real-time notifications to dashboard"
+   ```
+7. **Push to your fork**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+8. **Open a Pull Request** against our `main` branch.
 
-```bash
-# Форкаем и клонируем
-git clone git@github.com:YOUR-USERNAME/sample-cli.git
-cd sample-cli
+## Code Style & Standards
+- We use Prettier for code formatting. Run `npm run format` before committing.
+- Write meaningful unit tests for any new features or bug fixes.
+- Document all new API endpoints or public functions.
 
-# Создаём ветку под изменение
-git checkout -b feat/short-description
-
-# Делаем изменения, коммитим
-git commit -m "feat: add short description"
-
-# Пушим и открываем PR
-git push origin feat/short-description
-```
-
-## Стиль кода
-
-- Python: `ruff check .` должен проходить без ошибок.
-- Тесты обязательны для новых фич.
-- Сообщения коммитов — на ваше усмотрение, но желательно понятные.
-
-## Code review
-
-- PR проходит ревью минимум одного мейнтейнера.
-- Ответ обычно в течение 2–3 рабочих дней.
-- Мы стараемся давать конструктивный фидбек, не «переделай всё».
+## Community & Questions
+If you have questions, feel free to open a discussion in our GitHub Discussions tab or join our community Discord server.
+`

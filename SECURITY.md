@@ -1,29 +1,33 @@
 # Security Policy
 
-## Поддерживаемые версии
+## Supported Versions
 
-- `0.2.x` — поддерживается полностью.
-- `0.1.x` — только критические уязвимости.
-- Версии ниже `0.1` — не поддерживаются.
+We actively monitor and patch vulnerabilities only in the following versions of this project:
 
-## Как сообщить об уязвимости
 
-**Не открывайте публичный issue.** Это сделает уязвимость доступной всем до момента исправления.
+| Version | Supported          |
+| ------- | ------------------ |
+| 2.0.x   | :white_check_mark: |
+| 1.5.x   | :white_check_mark: |
+| < 1.5   | :x:                |
 
-Сообщайте по адресу `security@example.com` или через GitHub Private Vulnerability Reporting (Settings → Security → Private vulnerability reporting).
+## Reporting a Vulnerability
 
-В письме укажите:
+**Please do not open public GitHub issues for security vulnerabilities.** 
 
-- описание уязвимости;
-- шаги воспроизведения;
-- возможный impact;
-- ваши предложения по исправлению (если есть).
+If you discover a security vulnerability within this project, please report it responsibly by following these steps:
 
-## Сроки
+1. **Email us directly:** Send a detailed report to **security@example.com**.
+2. **Encrypt your message:** (Optional) Use our PGP key `0x1234567890ABCDEF` if you are sending highly sensitive exploit data.
+3. **Include details:** Provide a clear description of the vulnerability, the steps required to reproduce it, and a working Proof of Concept (PoC) if available.
 
-- Подтверждение получения — в течение 48 часов.
-- Патч — в течение 7–14 дней в зависимости от сложности.
+### Our Commitment
 
-## Ответственное раскрытие
+* **Acknowledgment:** We will acknowledge receipt of your report within 48 hours.
+* **Timeline:** We strive to patch validated critical vulnerabilities within 14 business days.
+* **Coordination:** We will coordinate with you to publish a public Security Advisory (GHSA) once a fix is deployed, ensuring you receive proper credit for the discovery.
 
-Просим не публиковать детали уязвимости в течение 90 дней с момента нашего подтверждения, чтобы пользователи успели обновиться.
+## Automated Security Scans
+
+We run automated dependency vulnerability scanning on every pull request. If you are a contributor, please resolve any security alerts triggered by tools like Dependabot or Snyk before requesting a code review.
+

@@ -1,61 +1,60 @@
-# sample-cli
+# Git Bootcamp: Day 2 
 
-Утилита-пример для демонстрации стандартных файлов проекта.
-В реальной жизни здесь была бы пара абзацев о том, что делает проект и кому он нужен.
+Welcome to Day 2 of the Git & GitHub Bootcamp training intensive! This repository contains the reference materials, hands-on labs, and homework tasks designed to take you from a single-developer workflow to fluid team collaboration.
 
-## Содержание
+## Day 2 Learning Objectives
+* Master isolated feature development using branches.
+* Resolve merge conflicts safely without destroying code.
+* Use time-travel commands (`reset`, `revert`) to recover from mistakes.
+* Collaborate via standard GitHub Pull Request workflows.
 
-- [Быстрый старт](#быстрый-старт)
-- [Установка](#установка)
-- [Использование](#использование)
-- [Разработка](#разработка)
-- [Лицензия](#лицензия)
+---
 
-## Быстрый старт
+## Course Milestones & Progress Checklist
 
-```bash
-git clone git@github.com:example/sample-cli.git
-cd sample-cli
-python -m sample_cli --help
-```
+Complete the tasks below in chronological order during today's workshop.
 
-## Установка
+### Phase 1: Local Mastery & Time Travel
+- [x] **Step 1:** Configure your local workspace environment and sync upstream repository tracking.
+- [x] **Step 2:** Create an isolated feature branch named `feature/login-validation`.
+- [x] **Step 3:** Use `git diff` to audit untracked modifications prior to staging a commit.
+- [ ] **Step 4:** Execute a `git commit --amend` to repair a faulty commit message typo.
+- [ ] **Step 5:** Safely rollback a broken commit using `git revert` to preserve shared history.
 
-Зависимости: Python 3.11+. Виртуальное окружение по желанию.
+### Phase 2: Team Collaboration & Conflict Resolution
+- [ ] **Step 6:** Configure and link the official remote repository (`origin`).
+- [ ] **Step 7:** Pull down downstream updates via `git fetch` and perform a fast-forward merge.
+- [x] **Step 8:** Intentionally simulate and manually resolve a structural merge conflict.
+- [ ] **Step 9:** Leverage `git stash` to save local modifications when hotfixing a production issue.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+### Phase 3: GitHub Advanced Workflows
+- [ ] **Step 10:** Push your finalized topic branches up to your GitHub forks.
+- [ ] **Step 11:** Draft and open a structured GitHub Pull Request (PR) targeted at the `main` branch.
+- [ ] **Step 12:** Review a peer's incoming PR, leave constructive comments, and approve changes.
 
-## Использование
+---
 
-Простейший сценарий:
+## Sandbox Execution Guide
 
-```bash
-python -m sample_cli greet --name "Git Bootcamp"
-# → Hello, Git Bootcamp!
-```
-
-<details>
-<summary>Расширенный сценарий (со сворачиваемым блоком)</summary>
+To complete today's lab checklist locally, clone this repository to your system:
 
 ```bash
-python -m sample_cli greet --name "Git" --shout
-# → HELLO, GIT!
+# Clone this bootcamp repository
+git clone https://github.com
+
+# Move into the workspace folder
+cd git-bootcamp-day-2
 ```
 
-Внутри `<details>` можно прятать редко нужные подробности, чтобы основной README оставался коротким.
+### Useful Cheat Sheet Commands
+* Check branch states and untracked files: `git status`
+* View a graphical tree of your commit history: `git log --oneline --graph --all`
+* Abandon uncommitted directory changes: `git checkout -- <file>`
 
-</details>
+---
 
-## Разработка
+##  Contributing & Assistance
+Stuck on a merge conflict during a checklist step? Do not panic! 
+* Open a detailed item inside the repository's **GitHub Issues** tab.
+* Reference your problem by attaching a terminal output log or screenshot.
 
-- Запуск тестов: `pytest`
-- Стиль: `ruff check .`
-- Перед PR — см. [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Лицензия
-
-MIT — см. [LICENSE](LICENSE).
