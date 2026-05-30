@@ -1,0 +1,12 @@
+[user]
+	name = Sergey Baryshnikov
+	email = baryshnikov.s@domain.ru
+[core]
+	editor = vi
+[init]
+	defaultBranch = main
+[alias]
+    st = status -sb
+    co = checkout
+    br = branch
+    ci = commit
